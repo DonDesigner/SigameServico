@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Atualizar";
+}
+
+<h2>Atualizar</h2>
+
+@if (ViewBag.Sucesso != null)
+{
+    <div class="alert alert-success">
+        <strong>Sucesso!</strong> @ViewBag.Sucesso
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        <strong>Erro!</strong>
+        <p>@ViewBag.Erro</p>
+    </div>
+}
+
+<hr />
+<p>Siga-Me</p>

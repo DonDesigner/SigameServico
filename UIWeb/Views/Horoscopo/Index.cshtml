@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Domain.Entities.Horoscopo>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Horoscopo</h2>
+
+<p>@Html.ActionLink("Criar novo", "Create")  |  @Html.ActionLink("Atualizar", "Atualizar")</p>
+
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Nome)</th>
+
+        <th>@Html.DisplayNameFor(model => model.Previsao)</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                <p>
+                    @Html.DisplayFor(modelItem => item.Previsao)
+                </p>
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Editar",  new { id=item.Id.ToString()} ) 
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+

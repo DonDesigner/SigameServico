@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Domain.Entities.Horoscopo>
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Criar Novo</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Horoscopo</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="col-md-10">
+        
+        </div>
+
+    </div>
+}
+
