@@ -288,6 +288,8 @@
     <Content Include="Views\Noticias\Index.cshtml" />
     <Content Include="Views\Noticias\Create.cshtml" />
     <Content Include="Views\Noticias\Atualizar.cshtml" />
+    <Content Include="Views\Noticias\Edit.cshtml" />
+    <Content Include="Views\Noticias\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
