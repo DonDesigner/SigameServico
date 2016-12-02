@@ -1,5 +1,5 @@
 ﻿using Domain.Entities;
-using Services.Noticias;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
